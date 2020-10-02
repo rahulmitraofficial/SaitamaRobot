@@ -55,7 +55,7 @@ Hi {}, my name is {}!
 You can find the list of available commands with /help.
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
+Hey there! My name is {}!
 I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
 the things I can help you with.
 
