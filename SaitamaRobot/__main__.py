@@ -53,6 +53,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 Hi {}, my name is {}! 
 You can find the list of available commands with /help.
+"""
 
 HELP_STRINGS = """
 Hey there! My name is {}!
@@ -188,13 +189,7 @@ def start(update: Update, context: CallbackContext):
                         InlineKeyboardButton(
                             text="☑️Add Danger Dog to your group",
                             url="t.me/{}?startgroup=true".format(
-                                context.bot.username))
-                  
-                        
-                         InlineKeyboardButton(
-                             text="🗄 Source code",
-                             url="https://github.com/AnimeKaizoku/SaitamaRobot")
-                     ]]))
+                                context.bot.username))], [ InlineKeyboardButton( text="🗄 Source code", url="https://github.com/AnimeKaizoku/SaitamaRobot") ]]))
     else:
         update.effective_message.reply_text(
             "I'm online!\n<b>Up since:</b> <code>{}</code>".format(uptime),
